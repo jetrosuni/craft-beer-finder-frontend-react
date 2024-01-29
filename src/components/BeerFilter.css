@@ -1,0 +1,17 @@
+.cbf-day-label,
+.cbf-rating-label {
+  color: #c2c2c2;
+  min-width: 6rem;
+  width: 6rem;
+}
+.cbf-input-area {
+  padding: 0.25rem 0.5rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .cbf-tiny-screen-support {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+}

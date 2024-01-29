@@ -1,0 +1,38 @@
+.beer-list {
+  text-align: left;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .beer-list {
+    margin: 1.5rem 0 0 0;
+    padding: 0 2rem;
+  }
+}
+
+/* transitions */
+
+.beer-list-enter {
+  transform: translateX(10rem);
+  opacity: 0;
+}
+
+.beer-list-enter-active {
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
+  transition-property: opacity, transform;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.beer-list-exit {
+  opacity: 1;
+}
+
+.beer-list-exit-active {
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  transition-property: opacity;
+  opacity: 0;
+}
