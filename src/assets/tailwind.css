@@ -1,0 +1,15 @@
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-[#4f4f4f];
+    @apply bg-white;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-900;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
